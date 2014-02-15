@@ -1,0 +1,34 @@
+Evaluate 1 + 1 and then 1 + "one". Is Io strongly typed or weakly
+typed? Support your answer with code.
+
+Io> 1 + "one"
+
+  Exception: argument 0 to method '+' must be a Number, not a 'Sequence'
+  ---------
+  message '+' in 'Command Line' on line 1
+
+Is 0 true or false? What aboutthe empty string? Is niltrue or false?
+Support your answer with code.
+
+Io> true and 0
+==> true
+Io> "" and true
+==> true
+Io> nil and true
+==> false
+
+How can you tell what slots a prototype supports?
+
+Io> Object slotNames
+==> list(slotSummary, ownsSlots, and, apropos, foreachSlot, performWithArgList, coroWith, <, actorRun, removeAllSlots, for, isTrue, clone, become, !=, write, switch, setSlotWithType, method, ancestors, futureSend, resend, isActivatable, lazySlot, list, justSerialized, evalArg, uniqueId, @@, do, thisContext, deprecatedWarning, setProto, println, hasProto, writeln, setSlot, handleActorException, inlineMethod, ifNonNil, isKindOf, removeAllProtos, coroFor, pause, continue, ifNil, stopStatus, prependProto, ancestorWithSlot, print, protos, evalArgAndReturnSelf, doString, type, ?, return, break, >, message, ==, currentCoro, slotNames, hasLocalSlot, while, perform, serialized, ifNonNilEval, wait, asString, newSlot, getLocalSlot, or, getSlot, asSimpleString, compare, coroDoLater, hasDirtySlot, slotDescriptionMap, removeProto, appendProto, in, isNil, uniqueHexId, loop, lexicalDo, not, .., doRelativeFile, try, launchFile, , yield, isError, ifNilEval, init, evalArgAndReturnNil, doFile, serializedSlotsWithNames, argIsActivationRecord, returnIfError, isIdenticalTo, super, isLaunchScript, serializedSlots, cloneWithoutInit, hasSlot, contextWithSlot, thisLocalContext, >=, if, relativeDoFile, memorySize, <=, asyncSend, thisMessage, @, returnIfNonNil, markClean, coroDo, slotValues, -, doMessage, proto, ifError, setIsActivatable, updateSlot, removeSlot, shallowCopy, block, actorProcessQueue, raiseIfError, setProtos, argIsCall)
+
+What is the difference between = (equals), := (colon equals), and ::=
+(colon colon equals)? When would you use each one?
+
+::= create slot, create set method, assign value
+:= create slot, assign value
+= assign value to existing slot
+
+
+
+

@@ -79,11 +79,13 @@ words.exists(word => word.size > 5)
 words.sortWith((s, t) => s.charAt(0).toLower < t.charAt(0).toLower)
 words.sort((s, t) => s.size < t.size)
 
- val list = List(1, 2, 3)
- val sum = (0 /: list) {(sum, i) => sum + i}
+val list = List(1, 2, 3)
+val sum = (0 /: list) {(sum, i) => sum + i}
 
 val list = List(1, 2, 3)
 list.foldLeft(0)((sum, value) => sum + value)
+
+
 
 
 

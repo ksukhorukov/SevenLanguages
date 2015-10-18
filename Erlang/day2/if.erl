@@ -4,3 +4,4 @@ if
  X < 0 -> negative; 
  true -> zero
 end.
+
